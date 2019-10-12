@@ -20,7 +20,7 @@ spec:
       annotations:
     spec:
       containers:
-        - image: gcr.io/unity-ads-workshop-test/arseni-http-doom:master
+        - image: docker.io/arsenileskinen/http-doom:master
           name: arseni-http-doom
           imagePullPolicy: Always
           resources:
