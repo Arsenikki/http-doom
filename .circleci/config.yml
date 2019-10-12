@@ -33,7 +33,7 @@ jobs:
 
             set -x
             image=docker.io/arsenileskinen/http-doom
-            docker login -u arsenileskinen -p $test_pw
+            docker login -u arsenileskinen --password-stdin
 
             docker build -t ${image}:${CIRCLE_SHA1} .
             docker push ${image}:${CIRCLE_SHA1}
